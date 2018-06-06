@@ -1,0 +1,61 @@
+
+body {
+  background-color: #E7E8EC;
+}
+
+@header_height: 62px;
+@header_height_fs: 16px;
+.header {
+  height: @header_height;
+  width: 100%;
+  line-height: @header_height;
+  font-size: @header_height_fs;
+  color: #4e4a4b;
+  background-color: white;
+  > .row {
+    max-width: 1082px;
+    height: 100%;
+    padding-left: 190px;
+    padding-right: 30px;
+    > .logo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 190px;
+      text-align: right;
+      background: url("../img/logo.jpg") no-repeat left center;
+    }
+    > .login_out {
+      position: absolute;
+      font-size: 12px;
+      top: 0;
+      right: 0;
+    }
+    //> .navbar {
+    //  border: none;
+    //  margin-bottom: 0;
+    //  > .container-fluid {
+    //    padding: 0;
+    //    > .navbar-header {
+    //    }
+    //    > .navbar-collapse {
+    //      padding: 0;
+    //      > .navbar-nav {
+    //        width: 100%;
+    //        > li {
+    //          padding: 0;
+    //          > a {
+    //            text-align: center;
+    //            line-height: @header_height;
+    //            padding: 0;
+    //            width: 100%;
+    //            height: @header_height;
+    //          }
+    //        }
+    //      }
+    //    }
+    //  }
+    //
+    //}
+  }
+}

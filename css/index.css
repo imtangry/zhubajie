@@ -1,0 +1,32 @@
+body {
+  background-color: #E7E8EC;
+}
+.header {
+  height: 62px;
+  width: 100%;
+  line-height: 62px;
+  font-size: 16px;
+  color: #4e4a4b;
+  background-color: white;
+}
+.header > .row {
+  max-width: 1082px;
+  height: 100%;
+  padding-left: 190px;
+  padding-right: 30px;
+}
+.header > .row > .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  text-align: right;
+  background: url("../img/logo.jpg") no-repeat left center;
+}
+.header > .row > .login_out {
+  position: absolute;
+  font-size: 12px;
+  top: 0;
+  right: 0;
+}
+/*# sourceMappingURL=index.css.map */
