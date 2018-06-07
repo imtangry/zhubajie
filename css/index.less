@@ -5,6 +5,7 @@ body {
 
 @header_height: 62px;
 @header_height_fs: 16px;
+@max_width:1200px;
 //头部样式开始
 .header {
   height: @header_height;
@@ -15,7 +16,7 @@ body {
   background-color: white;
   > .row {
     position: relative;
-    max-width: 1082px;
+    max-width: @max_width;
     margin: 0 auto;
     height: 100%;
     padding-left: 200px;
@@ -44,7 +45,7 @@ body {
         > .navbar-header {
           margin: 0;
           height: 62px;
-          >.navbar-toggle{
+          > .navbar-toggle {
             margin-top: 12px;
           }
         }
@@ -56,7 +57,7 @@ body {
             padding-right: 0;
             > li {
               padding: 0;
-              .active
+
               > a {
                 text-align: center;
                 line-height: @header_height;
@@ -65,6 +66,11 @@ body {
                 height: @header_height;
               }
             }
+            > .active > a {
+              color: white;
+              font-weight: 600;
+              background-color: #36adff;
+            }
           }
         }
       }
@@ -72,42 +78,49 @@ body {
     }
   }
 }
+
 //头部样式结束
 //主题样式开始
 
-.content{
-
+.content {
 
 }
+
 //主题样式结束
-.content{
-  max-width: 1082px;
+.content {
+  max-width: @max_width;
   margin: 22px auto 0;
   background-color: white;
->.info{
-  >.user_head{
-    width: 70px;
-    height: 70px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 2px;
->img{
-  width: 100%;
-}
+  > .row > .info {
+    > .user {
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+      color: #464445;
+      letter-spacing: 2px;
+      > .head_img {
+        display: block;
+        width: 70px;
+        height: 70px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        margin: 19px auto 18px;
+        border-radius: 2px;
+        > img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
-}
-
 
 @media screen and (max-width: 768px) {
   .header > .row {
-    max-width: 1082px;
-    height: 100%;
-    padding-left:0;
+    padding-left: 0;
     padding-right: 0;
     > .logo {
-    left: 50%;
+      left: 50%;
       transform: translateX(-50%);
-  }
+    }
   }
 }
