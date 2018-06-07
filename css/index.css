@@ -14,7 +14,7 @@ body {
   max-width: 1082px;
   margin: 0 auto;
   height: 100%;
-  padding-left: 190px;
+  padding-left: 200px;
   padding-right: 30px;
 }
 .header > .row > .logo {
@@ -57,7 +57,7 @@ body {
 .header > .row > .navbar > .container-fluid > .navbar-collapse > .navbar-nav > li {
   padding: 0;
 }
-.header > .row > .navbar > .container-fluid > .navbar-collapse > .navbar-nav > li > a {
+.header > .row > .navbar > .container-fluid > .navbar-collapse > .navbar-nav > li .active > a {
   text-align: center;
   line-height: 62px;
   padding: 0;
@@ -67,6 +67,7 @@ body {
 .content {
   max-width: 1082px;
   margin: 22px auto 0;
+  background-color: white;
 }
 .content > .info > .user_head {
   width: 70px;
