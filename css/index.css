@@ -10,11 +10,12 @@ body {
   background-color: white;
 }
 .header > .row {
+  position: relative;
   max-width: 1082px;
+  margin: 0 auto;
   height: 100%;
   padding-left: 190px;
   padding-right: 30px;
-  margin: 0;
 }
 .header > .row > .logo {
   position: absolute;
@@ -62,6 +63,20 @@ body {
   padding: 0;
   width: 100%;
   height: 62px;
+}
+.content {
+  max-width: 1082px;
+  margin: 22px auto 0;
+}
+.content > .info > .user_head {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 2px;
+}
+.content > .info > .user_head > img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .header > .row {

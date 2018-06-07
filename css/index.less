@@ -5,6 +5,7 @@ body {
 
 @header_height: 62px;
 @header_height_fs: 16px;
+//头部样式开始
 .header {
   height: @header_height;
   width: 100%;
@@ -13,11 +14,12 @@ body {
   color: #4e4a4b;
   background-color: white;
   > .row {
+    position: relative;
     max-width: 1082px;
+    margin: 0 auto;
     height: 100%;
     padding-left: 190px;
     padding-right: 30px;
-    margin: 0;
     > .logo {
       position: absolute;
       z-index: 999;
@@ -69,6 +71,31 @@ body {
     }
   }
 }
+//头部样式结束
+//主题样式开始
+
+.content{
+
+
+}
+//主题样式结束
+.content{
+  max-width: 1082px;
+  margin: 22px auto 0;
+>.info{
+  >.user_head{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 2px;
+>img{
+  width: 100%;
+}
+  }
+}
+}
+
 
 @media screen and (max-width: 768px) {
   .header > .row {
