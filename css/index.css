@@ -37,6 +37,8 @@ body {
   margin-bottom: 0;
 }
 .header > .row > .navbar > .container-fluid {
+  position: relative;
+  z-index: 999;
   padding: 0;
 }
 .header > .row > .navbar > .container-fluid > .navbar-header {
@@ -47,6 +49,7 @@ body {
   margin-top: 12px;
 }
 .header > .row > .navbar > .container-fluid > .navbar-collapse {
+  background-color: white;
   padding: 0;
 }
 .header > .row > .navbar > .container-fluid > .navbar-collapse > .navbar-nav {
