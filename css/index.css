@@ -83,6 +83,8 @@ body {
   text-align: center;
   color: #464445;
   letter-spacing: 2px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
 }
 .content > .row > .info > .user > .head_img {
   display: block;
@@ -95,6 +97,10 @@ body {
 }
 .content > .row > .info > .user > .head_img > img {
   width: 100%;
+}
+.content > .row > .info > .user_cards {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
 }
 @media screen and (max-width: 768px) {
   .header > .row {
