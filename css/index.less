@@ -41,6 +41,8 @@ body {
       margin-bottom: 0;
 
       > .container-fluid {
+        position: relative;
+        z-index: 999;
         padding: 0;
         > .navbar-header {
           margin: 0;
@@ -50,6 +52,7 @@ body {
           }
         }
         > .navbar-collapse {
+          background-color: white;
           padding: 0;
           > .navbar-nav {
             width: 100%;
@@ -98,6 +101,8 @@ body {
       text-align: center;
       color: #464445;
       letter-spacing: 2px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ebebeb;
       > .head_img {
         display: block;
         width: 70px;
@@ -110,6 +115,10 @@ body {
           width: 100%;
         }
       }
+    }
+    >.user_cards{
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ebebeb;
     }
   }
 }
