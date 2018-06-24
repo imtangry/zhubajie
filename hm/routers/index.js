@@ -9,13 +9,14 @@ router.use(function timeLog(req, res, next) {
 });
 // 查询
 router.get('/', function(req, res) {
-    res.send('Birds home page');
+    res.render('index', { title: 'Hey', message: 'Hello there!'});
 });
 // 增加
 router.post('/', function(req, res) {
     res.send('About birds');
 });
-router.put('/:id', function(req, res) {
+// 删除
+router.delete('/:id', function(req, res) {
     res.send('About birds');
 });
 

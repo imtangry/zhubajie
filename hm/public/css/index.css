@@ -127,6 +127,19 @@ body {
   background: white;
   padding-top: 19px;
 }
+.content > .row > .info_more > .table {
+  text-align: center;
+}
+.content > .row > .info_more > .table th {
+  text-align: center;
+}
+.content > .row > .info_more > .table span {
+  cursor: pointer;
+  display: block;
+}
+.content > .row > .info_more > .table span:hover {
+  color: #36adff;
+}
 @media screen and (max-width: 768px) {
   .header > .row {
     padding-left: 0;

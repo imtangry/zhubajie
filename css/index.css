@@ -127,6 +127,9 @@ body {
   background: white;
   padding-top: 19px;
 }
+.content > .row > .info_more > .table span {
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .header > .row {
     padding-left: 0;
