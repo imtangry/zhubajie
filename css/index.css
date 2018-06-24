@@ -1,5 +1,9 @@
 body {
   background-color: #E7E8EC;
+  color: #4e4a4b;
+}
+.gray {
+  color: #888;
 }
 .header {
   height: 62px;
@@ -49,6 +53,7 @@ body {
   margin-top: 12px;
 }
 .header > .row > .navbar > .container-fluid > .navbar-collapse {
+  margin: 0;
   background-color: white;
   padding: 0;
 }
@@ -67,15 +72,24 @@ body {
   width: 100%;
   height: 62px;
 }
+.header > .row > .navbar > .container-fluid > .navbar-collapse > .navbar-nav > li > a:hover {
+  background-color: #C5E6FF;
+}
 .header > .row > .navbar > .container-fluid > .navbar-collapse > .navbar-nav > .active > a {
   color: white;
   font-weight: 600;
+  background-color: #36adff;
+}
+.header > .row > .navbar > .container-fluid > .navbar-collapse > .navbar-nav > .active > a:hover {
   background-color: #36adff;
 }
 .content {
   max-width: 1200px;
   margin: 22px auto 0;
   background-color: white;
+}
+.content > .row > .info > div {
+  border-bottom: 1px solid #ebebeb;
 }
 .content > .row > .info > .user {
   width: 100%;
@@ -84,7 +98,7 @@ body {
   color: #464445;
   letter-spacing: 2px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 14px;
 }
 .content > .row > .info > .user > .head_img {
   display: block;
@@ -101,6 +115,10 @@ body {
 .content > .row > .info > .user_cards {
   padding-bottom: 15px;
   border-bottom: 1px solid #ebebeb;
+}
+.content > .row > .info > .user_cards > .item {
+  overflow: hidden;
+  margin: 7px 0;
 }
 @media screen and (max-width: 768px) {
   .header > .row {

@@ -1,6 +1,10 @@
 
 body {
   background-color: #E7E8EC;
+  color: #4e4a4b;
+}
+.gray{
+  color: #888;
 }
 
 @header_height: 62px;
@@ -52,6 +56,8 @@ body {
           }
         }
         > .navbar-collapse {
+          //重写，不然宽度会超过屏幕,但是没生效，为什么？
+          margin: 0;
           background-color: white;
           padding: 0;
           > .navbar-nav {
@@ -67,12 +73,18 @@ body {
                 padding: 0;
                 width: 100%;
                 height: @header_height;
+                &:hover{
+                  background-color: #C5E6FF;
+                }
               }
             }
             > .active > a {
               color: white;
               font-weight: 600;
               background-color: #36adff;
+              &:hover{
+                background-color: #36adff;
+              }
             }
           }
         }
@@ -85,16 +97,15 @@ body {
 //头部样式结束
 //主题样式开始
 
-.content {
 
-}
-
-//主题样式结束
 .content {
   max-width: @max_width;
   margin: 22px auto 0;
   background-color: white;
   > .row > .info {
+    >div{
+      border-bottom: 1px solid #ebebeb;
+    }
     > .user {
       width: 100%;
       font-size: 16px;
@@ -102,7 +113,8 @@ body {
       color: #464445;
       letter-spacing: 2px;
       padding-bottom: 15px;
-      border-bottom: 1px solid #ebebeb;
+
+      margin-bottom: 14px;
       > .head_img {
         display: block;
         width: 70px;
@@ -119,10 +131,14 @@ body {
     >.user_cards{
       padding-bottom: 15px;
       border-bottom: 1px solid #ebebeb;
+  >.item{
+    overflow: hidden;
+    margin: 7px 0;
+  }
     }
   }
 }
-
+//主题样式结束
 @media screen and (max-width: 768px) {
   .header > .row {
     padding-left: 0;
