@@ -135,14 +135,44 @@ body {
         > .item {
           overflow: hidden;
           margin: 7px 0;
+          > .fr {
+            letter-spacing: 2px;
+          }
+        }
+      }
+      > .user_account {
+        > .item {
+          height: 20px;
+          line-height: 20px;
+          margin: 10px 0;
+          > span {
+            text-align: left;
+          }
+          > input {
+            letter-spacing: 2px;
+            text-align: right;
+          }
+          > select {
+            border: none;
+            height: 20px;
+            letter-spacing: 2px;
+            text-align-last: right;
+            &:focus{
+              outline: none;
+            }
+            > option {
+              border: none;
+              direction: ltr;
+            }
+          }
         }
       }
     }
     > .info_more {
       background: white;
       padding-top: 19px;
-      >.table{
-        span{
+      > .table {
+        span {
           cursor: pointer;
         }
       }

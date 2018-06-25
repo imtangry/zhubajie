@@ -123,6 +123,34 @@ body {
   overflow: hidden;
   margin: 7px 0;
 }
+.content > .row .info > .user_cards > .item > .fr {
+  letter-spacing: 2px;
+}
+.content > .row .info > .user_account > .item {
+  height: 20px;
+  line-height: 20px;
+  margin: 10px 0;
+}
+.content > .row .info > .user_account > .item > span {
+  text-align: left;
+}
+.content > .row .info > .user_account > .item > input {
+  letter-spacing: 2px;
+  text-align: right;
+}
+.content > .row .info > .user_account > .item > select {
+  border: none;
+  height: 20px;
+  letter-spacing: 2px;
+  text-align-last: right;
+}
+.content > .row .info > .user_account > .item > select:focus {
+  outline: none;
+}
+.content > .row .info > .user_account > .item > select > option {
+  border: none;
+  direction: ltr;
+}
 .content > .row > .info_more {
   background: white;
   padding-top: 19px;
