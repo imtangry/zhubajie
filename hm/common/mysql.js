@@ -35,4 +35,4 @@ var query = function(mysql,values){
         })
     })
 }
-exports.db = query;
+module.exports= query;

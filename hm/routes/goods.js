@@ -4,11 +4,12 @@ var service = require("../service/goodsService");
 // 获取所有商品
 router.get("/", function (req, res, next) {
     service.getAllGoods().then(function (data) {
-        res.rander("goods", {goods: data});
+        console.log(data);
+        res.render("goods", {goods: data});
     })
 });
 // 添加一个商品
-router.push("/", function (req, res, next) {
+router.post("/", function (req, res, next) {
     var body = req.body;
     var values = [
         body.name,
@@ -22,7 +23,7 @@ router.push("/", function (req, res, next) {
     })
 });
 // 修改一个商品
-router.push("/:id", function (req, res, next) {
+router.post("/:id", function (req, res, next) {
     var body = req.body;
     var id=body.id;
     var values = [
@@ -43,3 +44,4 @@ router.get("/del", function (req, res, next) {
         res.send(data);
     })
 });
+module.exports=router;
